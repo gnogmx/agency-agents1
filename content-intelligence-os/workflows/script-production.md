@@ -5,14 +5,22 @@ From COMMITTED idea to a published video. This workflow chains the Story Archite
 ## Precondition
 
 - A COMMITTED idea with a frozen scorecard (from the video-selection workflow), including the final title and winning thumbnail concept.
+- A LOCKED story blueprint (from the story-blueprint workflow, `outputs/storyboards/[slug]-story-blueprint.md`). Scripting does not begin without it.
 
 ## Sequence
 
-### Step 1 — Script (Story Architect)
-Run `agents/05-story-architect.md`: research pass with source ledger, spine identification, beat map before prose, promise-payment verification, full draft, delete test.
-- Gate: **human script approval** → status LOCKED.
-- If research reveals the story lacks a climax scene or the candidate law doesn't hold: STOP and return to selection with findings — do not write around a hollow spine. This early kill is cheap; discovering it in the edit is not.
-- Output: `outputs/scripts/[slug]-script.md` (LOCKED)
+### Step 1 — Script (Story Architect + Scriptwriting System)
+The script stage is not a single draft — it is a gated sequence, run per `workflows/episode-script-workflow.md` and `brain/scriptwriting-system.md`. All six gates must pass before the script is LOCKED:
+
+1. **Locked story blueprint** — confirm the blueprint (`outputs/storyboards/[slug]-story-blueprint.md`) is LOCKED. The script realizes the blueprint's structure; it does not re-architect it. If research reveals the story lacks a climax scene or the candidate law doesn't hold, STOP and return to selection — do not write around a hollow spine.
+2. **Draft narration** — write the full script against the 9 canonical sections, keeping the three layers (narration / on-screen text / visual direction) visually separate, at the committed runtime and ~150 wpm. → `outputs/scripts/[slug]-script-v1.md`.
+3. **Fact-check ledger** — as the draft is written, log every specific claim (number, date, quote, acquisition amount, memo, market share, prototype, executive claim, research finding) in `outputs/scripts/[slug]-fact-check-ledger.md` with status, evidence needed, risk level, source type, and notes.
+4. **Claim risk review** — cross-check that every specific in the script has a ledger row; assign statuses and risk levels; flag every High-risk claim about real people/companies for mandatory external verification; confirm each "Remove if not verified" claim has a named fallback.
+5. **Rewrite pass** — align narration phrasing to each claim's ledger status (hedge unverified claims; no "this proves" without a verifiable entry; no contempt for the subject; enemy stays a catalyst); apply the delete test to hit runtime.
+6. **Human approval** — a reviewer approves the script + ledger together, confirming the hook works, the layers are clean, the runtime is real, and every High-risk claim is flagged. Approval → status LOCKED.
+
+- **Gate:** LOCKED requires all six steps. Producing to publish still requires the ledger's High-risk and "Needs external verification" rows cleared before the Publisher goes live — approval to produce is not approval to publish unverified specifics.
+- Output: `outputs/scripts/[slug]-script-v1.md` (LOCKED) + `outputs/scripts/[slug]-fact-check-ledger.md`
 
 ### Step 2 — Storyboard (Design Director)
 Run `agents/06-design-director.md` on the locked script: beat-to-visual mapping, interrupt audit, chart specs, signature moments, rights pass, asset production list.
@@ -48,7 +56,7 @@ Run `agents/09-publisher.md`: final gate (veto power), metadata build, configura
 
 | Stage | Artifact |
 |---|---|
-| Script | `outputs/scripts/[slug]-script.md` (LOCKED, with beat map + source ledger) |
+| Script | `outputs/scripts/[slug]-script-v1.md` (LOCKED) + `outputs/scripts/[slug]-fact-check-ledger.md` |
 | Storyboard | `outputs/storyboards/[slug]-storyboard.md` |
 | Thumbnails | `outputs/thumbnails/[slug]/` (final + swap + notes) |
 | Video | `outputs/videos/[slug]/` (master, captions, QC report) |
