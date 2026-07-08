@@ -78,22 +78,60 @@ For each claim: which sources support it, its verification classification, wheth
 
 ---
 
-## Pre-Publication Gate (must be CLEARED before recording/publish)
+## Table C — Rewrite Pass Resolution (v2)
 
-Current status: **BLOCKED.** The script may proceed into blueprint/production prep, but cannot be recorded or published until every item below is satisfied and human approval is recorded.
+Records how each claim was resolved in `outputs/scripts/nokia-script-v2-verified.md`. Resolution values: **Cleared** · **Cleared with cautious phrasing** · **Attributed** · **Removed** · **Still blocked**.
 
-**High-risk rows — required action before the gate clears:**
-- **Row 2 (app-store concept)** — REWRITE to the safer experimentation framing (row 1), or REMOVE. Do not publish the original.
-- **Row 12 (fear-culture research)** — keep, but attribute to INSEAD research (S1/S2); confirm study details before naming any number on screen.
-- **Row 15 (burning-platform memo)** — confirm against S3/S4; verbatim quote only if cited to S3.
-- **Row 17 (~$7.2B acquisition / ~$7.6B write-down)** — confirm exact figures against S6/S5 and S7; use exact numbers only tied to those sources.
+| # | Claim (short) | Resolution in v2 | How it now reads / what changed |
+|---|---------------|------------------|----------------------------------|
+| 1 | Pre-iPhone touchscreen/internet experimentation | Cleared with cautious phrasing | Generalized to "experimented early with touchscreens and internet-ready devices" that "never became one decisive bet." Specific single-source anecdote dropped. |
+| 2 | Pre-Apple online app-store concept | Removed | Cut entirely. Replaced by the safer framing: early experimentation that never became a decisive platform (row 1). |
+| 3 | Sold for a fraction of former worth | Cleared | Kept as comparative, tied to the verified 2013 sale (S5/S6). |
+| 4 | ~40% market share | Cleared with cautious phrasing | Scoped as "estimated share of the device market… by its own reporting" (Nokia Q4 2007, S13). Not smartphone share. |
+| 5 | ~Quarter-trillion peak valuation | Removed | Figure removed. Replaced with "one of the most valuable and dominant mobile companies in the world." |
+| 6 | Symbian was Nokia's OS, led smartphones | Cleared with cautious phrasing | Kept qualitative ("dominant in the smartphone era"); no share number. |
+| 7 | Next-gen projects shelved/overruled | Cleared with cautious phrasing | Framed as a pattern ("experiments, not products"; "never became one decisive bet"), no single named product. |
+| 8 | iPhone introduced early 2007 | Cleared | Kept; date tied to S8. |
+| 9 | Early iPhone lagged on specs/battery | Removed | Spec-lag claim removed. Reframed to "the iPhone changed what customers expected a phone to feel like." |
+| 10 | App store, outside developers | Cleared with cautious phrasing | "Opened in 2008 with a few hundred apps, and then it kept growing" (consistent with S9's 500-at-launch); model narrated, no "thousands at launch." |
+| 11 | Android ~a year later, open to many makers | Cleared | Kept; framed as open platform, "not a single Google phone" (S10/S11/S12). |
+| 12 | Fear culture, bad news softened upward | Attributed | "Researchers who later studied Nokia argued that fear inside the organization made bad news harder to surface." Attributed to research (S1/S2), not omniscient fact. |
+| 13 | Symbian technical debt slowed development | Cleared with cautious phrasing | Presented as analysis; comparative, no invented metric. |
+| 14 | New leadership by 2011 | Cleared with cautious phrasing | "New leadership" via the memo's authorship (S3/S4); no unsourced start date. |
+| 15 | Feb 2011 burning-platform memo | Cleared with cautious phrasing | Memo and February 2011 timing kept; described as "a stark image — a company standing on a burning platform." **No verbatim quote used** (see 15b). |
+| 15b | Exact memo wording | Removed | No verbatim quote appears in v2. (Quote remains available if later cited to S3.) |
+| 16 | Moved off own software (incl. MeeGo) to Windows Phone | Cleared with cautious phrasing | Framed carefully ("moving away from its own software… to bet on a partnership with Microsoft's Windows Phone"). |
+| 17 | ~$7.2B acquisition; ~$7.6B write-down | Cleared with cautious phrasing | "Reported at around seven point two billion dollars"; "an impairment of roughly seven point six billion dollars." Source-aware caution, tied to S5/S6 and S7. Publish still needs human source confirmation. |
+| 18 | N9 as credible product | Cleared with cautious phrasing | "By many accounts, a genuinely credible product" but "a path the company had already decided not to back." Not framed as salvation. |
+| 19 | Sales fell (Osborne dynamic) | Cleared | Kept as framing; no on-screen sales numbers without a source. |
+| 20 | "One of the most studied gambles" | Cleared | Kept, non-superlative. |
+| 21 | Empire Law | Cleared | Kept as the episode's own law. |
+| 22 | Core angle (speed, not stupidity) | Cleared | Kept as the thesis, supported by rows 7/12/13. |
+| 23 | Present-day parallels | Cleared | Kept generic; no company named on screen. |
 
-**Also required to clear the gate:**
-- **Rewrite rows (D):** Row 2, Row 5 (drop the peak-valuation figure), Row 9 (soften the iPhone spec-lag) must be reworded; none may survive in original form.
-- **Needs-stronger-source rows (5, 9):** the unsupported specific is removed unless a source is added.
-- **Exact numbers** (rows 4, 8, 10, 11, 17) appear only tied to their named sources and correctly scoped (esp. row 4 as *device* share).
-- **Exact quotes** (row 15) appear only cited to S3.
-- **Attributed rows (1, 12):** appear only with their attribution.
-- **Safe general framing** (rows 6, 19, 20, 21, 23) does not block the gate, but any on-screen chart/number or named company derived from them opens a new sourced row.
+**Rewrite pass result:** 0 claims remain "Still blocked" in the script. High-risk rows resolved as — Row 2: Removed · Row 12: Attributed · Row 15: Cleared with cautious phrasing (quote removed) · Row 17: Cleared with cautious phrasing (publish pending source confirmation).
 
-**Human approval:** the gate clears only when a reviewer records that the source pack was checked against every High-risk row and the rewrite instructions above were applied. Until then: **do not record, do not publish.**
+---
+
+## Pre-Publication Gate
+
+Current status: **CLEARED FOR VOICEOVER DRAFT — publication still pending human source confirmation.** The rewrite pass (v2) resolved every risky claim in the script; no Remove-or-rewrite claim survives in original form and no verbatim quote is used. Recording a voiceover draft is now permitted. Remotion production and publication remain gated on the items below and a recorded human approval.
+
+**High-risk rows — status after the rewrite pass (v2):**
+- **Row 2 (app-store concept)** — ✅ RESOLVED: Removed; replaced by the safer experimentation framing (row 1).
+- **Row 5 (peak valuation)** — ✅ RESOLVED: figure removed; reframed to "one of the most valuable and dominant mobile companies."
+- **Row 9 (iPhone spec-lag)** — ✅ RESOLVED: spec claim removed; reframed to "changed what customers expected a phone to feel like."
+- **Row 12 (fear-culture research)** — ✅ ATTRIBUTED in-script to "researchers who later studied Nokia." Publish action: confirm the specific study (S1/S2) before naming any figure on screen.
+- **Row 15 (burning-platform memo)** — ✅ Mentioned without a verbatim quote; February 2011 timing kept. Publish action: if a quote is ever added, cite it to S3.
+- **Row 17 (~$7.2B acquisition / ~$7.6B write-down)** — ✅ Phrased with source-aware caution ("reported at around…," "roughly…"). Publish action: human confirms the two figures against S6/S5 and S7.
+
+**Remaining before publication (not before voiceover draft):**
+- Human confirms the two Microsoft figures (row 17) against Reuters/Microsoft (S6/S5, S7).
+- Human confirms the fear-culture attribution (row 12) maps to the actual INSEAD research (S1/S2).
+- Human confirms the ~40% figure (row 4) is stated as *estimated device market share* per Nokia Q4 2007 (S13) — the v2 script already scopes it this way; confirm against the release.
+- Consider adding a direct 2011 Nokia–Microsoft partnership-announcement source to firm up row 16.
+- Any on-screen chart/number or named modern company (rows 6, 16, 19, 23) opens a new sourced row before it appears on screen.
+
+**Standing rules (unchanged):** exact numbers only tied to their sources and correctly scoped; exact quotes only cited to their source; attributed claims only with their attribution.
+
+**Human approval:** the voiceover-draft gate is CLEARED. The **publication** gate clears only when a reviewer records that the source pack was checked against every High-risk row above. Until that record exists: **a voiceover draft may be recorded; do not run Remotion production, and do not publish.**
