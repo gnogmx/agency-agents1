@@ -12,6 +12,8 @@ Structural rules for scripts. These apply to any narrative brand; documentary-sp
 
 ## Structural Template: The Loop Ladder
 
+This is a brand-agnostic craft model for tension and loop mechanics — not an episode format. The canonical Empire Laws episode structure is the 9-section format in `brands/empire-laws/video-format.md`, which is what every Empire Laws episode must follow; the Loop Ladder below simply describes the loop-and-payoff craft those sections apply.
+
 A retained video is a ladder of open loops, each closing as the next opens:
 
 - **0:00–0:30 — Hook**: The biggest loop. The paradox or question the entire video answers.
