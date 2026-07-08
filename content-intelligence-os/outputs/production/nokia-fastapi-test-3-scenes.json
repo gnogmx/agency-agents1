@@ -1,0 +1,24 @@
+{
+  "title": "Nokia Heard the Future and Ignored It - 3 Scene Test",
+  "channel": "Empire Laws",
+  "voice": "am_adam",
+  "format": "16:9",
+  "style": "cinematic premium business documentary; palette: black, charcoal, gold, white, muted teal",
+  "scenes": [
+    {
+      "narration": "Years before the iPhone, inside a lab in Finland, engineers were already playing with the future. Touchscreens. Phones that could reach the internet. The pieces of the device that would soon change the world were sitting right there, in their hands.",
+      "image_prompt": "Cinematic business documentary still, dark premium editorial lighting, palette of black charcoal deep gold white and muted teal, high contrast, shallow depth of field, subtle film grain, anamorphic, symbolic and metaphorical, 16:9. A single glowing early touchscreen concept device resting on a dark workbench in a dim Finnish design lab, cold blue key light with one warm gold reflection, dust suspended in the air, no visible faces, a sense of hidden potential.",
+      "animate": "Very slow push in toward the glowing device, faint dust particles drifting, a subtle pulse of light on the screen surface."
+    },
+    {
+      "narration": "And Nokia never turned them into one decisive product. A few years later, the biggest phone maker on Earth sold off what was left of its phone business — for a fraction of what the company had once been worth.",
+      "image_prompt": "Cinematic business documentary still, dark premium editorial lighting, palette of black charcoal deep gold white and muted teal, high contrast, film grain, anamorphic, 16:9. A vast empty phone factory floor at night going dark, one distant gold work light switching off, long shadows, a sense of an empire quietly winding down, wide cinematic scale, no people, no logos.",
+      "animate": "Slow pull out from the fading light, a barely perceptible flicker as the far light dims."
+    },
+    {
+      "narration": "Nokia didn't miss the future. In some ways, it saw it early. And that's the part that's hard to explain. Because if they could see it coming, how did they still lose everything?",
+      "image_prompt": "Cinematic business documentary still, dark premium editorial lighting, palette of black charcoal deep gold white and muted teal, high contrast, film grain, anamorphic, 16:9. A lone anonymous silhouette from behind standing at a high window looking over a city of cold blue lights with a single gold horizon glow, contemplative, the weight of a missed future, no identifiable face.",
+      "animate": "Almost still, a slow parallax drift across the city lights, faint reflection shimmer on the glass."
+    }
+  ]
+}
