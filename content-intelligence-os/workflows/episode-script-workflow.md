@@ -27,12 +27,15 @@ Write the full script, section by section, following the per-section output cont
 As each specific claim is written — number, quote, date, acquisition amount, internal memo, market share, prototype, executive claim, research finding — add a row to `outputs/scripts/[slug]-fact-check-ledger.md` with: claim, script section, status, evidence needed, risk level, recommended source type, notes.
 - Rule: a specific in narration with no ledger row is a defect. The ledger and the script are written together, not after.
 
-### Step 3 — Claim risk review
-Review the ledger as its own pass:
-- Confirm every specific in the script is present in the ledger (cross-check).
-- Assign/confirm status (Verified in project source / Needs external verification / Remove if not verified / Safe general framing) and risk level (High/Medium/Low).
-- Flag high-risk specifics about real people and companies for mandatory external verification before publish.
-- For any "Remove if not verified" claim, confirm a safer fallback is named so the narration survives if verification fails.
+### Step 3 — Fact verification & claim risk review
+Run the fact-verification workflow (`workflows/fact-verification-workflow.md`) on the draft + ledger, per `brain/fact-verification-system.md`:
+- Assemble the episode source pack (`outputs/scripts/[slug]-source-pack.md`) with source-quality tiers (Official / Academic / Major media / Secondary analysis / Weak source) and map each source to the claims it supports.
+- Cross-check that every specific in the script has a ledger row.
+- Classify each claim (Verified / Verified with caution / Needs stronger source / Use only as reported / Remove or rewrite / Safe general framing) — a claim can be no stronger than its best genuine source.
+- Set per claim: narration allowed?, on-screen text allowed?, exact number/quote allowed?, and the rewrite instruction.
+- Sort claims into decision buckets A–E (+ framing) in `outputs/scripts/[slug]-verified-claims-v1.md`.
+- Write the verification columns back into the ledger.
+- Flag every High-risk specific about real people/companies for mandatory source confirmation; confirm each Remove-or-rewrite claim has a named defensible fallback.
 
 ### Step 4 — Rewrite pass
 Revise the narration so its phrasing matches each claim's ledger status:
@@ -40,17 +43,26 @@ Revise the narration so its phrasing matches each claim's ledger status:
 - Remove banned phrasing; confirm no "this proves" without a verifiable ledger entry; confirm the subject is never called stupid and the external disruptor stays a catalyst.
 - Apply the delete test to hit runtime; tighten sentences for spoken delivery.
 
-### Step 5 — Human approval before production
-Present the script + ledger together. A human approves, requests changes, or rejects. The reviewer specifically confirms: the hook works, the layers are clean, the runtime is real, and every High-risk claim is flagged for verification.
-- Only an approved script + ledger unlocks the script-production workflow.
-- Publication-time rule: High-risk and "Needs external verification" claims must be verified (or reframed/cut per their fallback) before the Publisher goes live — approval to produce is not approval to publish unverified specifics.
+### Step 5 — Production gate + human approval
+No script moves to production until ALL of the following hold (the production gate, per `brain/fact-verification-system.md`):
+1. **High-risk claims are verified or rewritten** — every High-risk row is Verified, Verified with caution, Use only as reported (attributed), or reworded to a defensible claim. No original Remove-or-rewrite or Needs-stronger-source claim survives.
+2. **All exact numbers have sources** — every figure in narration or on-screen text is tied to a supporting source in the ledger and correctly scoped.
+3. **All exact quotes have sources** — every verbatim quote is tied to a source and marked quote-allowed; otherwise it is paraphrased.
+4. **All weak/anecdotal claims are attributed or removed** — none remain as bare assertions.
+5. **Human approval is recorded** — a reviewer confirms the source pack was checked against every High-risk row and the rewrite instructions were applied, and confirms the hook works, the layers are clean, and the runtime is real.
+
+- The gate verdict (BLOCKED / CLEARED) is recorded in the ledger's pre-publication gate.
+- Only a CLEARED gate + recorded approval unlocks the script-production workflow.
+- Produce ≠ publish: even after the gate clears, the Publisher re-confirms High-risk rows before going live.
 
 ## Outputs
 
 | Artifact | Location |
 |----------|----------|
 | Production-ready narration script | `outputs/scripts/[slug]-script-v1.md` |
-| Fact-check ledger | `outputs/scripts/[slug]-fact-check-ledger.md` |
+| Fact-check ledger (with verification columns) | `outputs/scripts/[slug]-fact-check-ledger.md` |
+| Source pack (quality-tiered) | `outputs/scripts/[slug]-source-pack.md` |
+| Verified-claims classification (A–E) | `outputs/scripts/[slug]-verified-claims-v1.md` |
 
 ## Rules
 
